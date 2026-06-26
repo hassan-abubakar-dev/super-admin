@@ -65,7 +65,7 @@ const HeroSection = () => {
           <button
             onClick={() => {
               setShowCampusPopup(false);
-              window.location.href = "/https://campusconnect-development-guide-vij.vercel.app/";
+             window.open("https://campusconnect-development-guide-vij.vercel.app/", "_blank");
             }}
             className="
               px-5 py-2
