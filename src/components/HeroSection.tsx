@@ -1,8 +1,12 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from './ui/button';
 import profilePhoto from '../../src/assets/admin-profile.png';
+import { useState } from 'react';
 
 const HeroSection = () => {
+
+  const [showCampusPopup, setShowCampusPopup] = useState(true);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Effects */}
@@ -14,6 +18,71 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--border)/0.1)_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--border)/0.1)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
 
       <div className="container mx-auto px-6 relative z-10">
+          {showCampusPopup && (
+    <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+
+      <div className="bg-background border rounded-2xl p-8 max-w-lg mx-4 shadow-2xl">
+
+        <div className="text-4xl mb-4">
+          🎓
+        </div>
+
+        <h2 className="text-2xl font-bold">
+          CSE 413 Software Engineering Students
+        </h2>
+
+        <p className="mt-4 text-muted-foreground leading-7">
+          Are you a Software Engineering student
+          looking for the CampusConnect mobile
+          application assignment guide,
+          implementation strategies,
+          backend resources,
+          API examples,
+          and integration documentation?
+        </p>
+
+        <p className="mt-4 text-muted-foreground leading-7">
+          A dedicated CampusConnect
+          development guide and reusable
+          backend resources are currently
+          being prepared to assist students
+          with the assignment.
+        </p>
+
+        <div className="flex justify-end gap-3 mt-8">
+
+          <button
+            onClick={() => setShowCampusPopup(false)}
+            className="
+              px-5 py-2
+              rounded-lg
+              border
+            "
+          >
+            Later
+          </button>
+
+          <button
+            onClick={() => {
+              setShowCampusPopup(false);
+              window.location.href = "/https://campusconnect-development-guide-vij.vercel.app/";
+            }}
+            className="
+              px-5 py-2
+              rounded-lg
+              bg-primary
+              text-white
+            "
+          >
+            Open Guide
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+  )}
         <div className="max-w-4xl mx-auto text-center">
           {/* Profile Photo */}
           <div className="mb-8 animate-fade-up">
