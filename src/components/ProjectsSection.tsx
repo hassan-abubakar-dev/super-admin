@@ -3,15 +3,25 @@ import { Button } from './ui/button';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import ChatbotImage from '../../src/assets/chatbot-interface.png'
 import FacebookImage from '../../src/assets/facebook-interface.png';
+import MasjibaImage from '../../src/assets/masjiba-logo-mark.png';
 import GamePic from '../../src/assets/game-pic.png'
 
 const ProjectsSection = () => {
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation();
   const { ref: projectsRef, isVisible: projectsVisible } = useScrollAnimation();
   const projects = [
+    
+     {
+      title: 'Masjiba',
+      description: 'A community-driven platform designed to centralize mosque lectures, announcements, and essential Islamic resources for the Ummah. Engineered as a high-performance PWA featuring offline capabilities, secure authentication, and scalable architecture.',
+      techStack: ["React", "Node.js", "express js", "PWA", "PostgreSQL", "Cloudflare", "cloudinary"],
+      image: MasjibaImage,
+      github: 'https://github.com/hassan-abubakar-dev/masjiba-demo',
+      demo: 'https://masjiba.com',
+    },
     {
       title: 'Facebook clone fullstack',
-      description: 'A full-stack social media app with authentication, email verification, posts, real-time chat, and file uploads, built using Node.js, PostgreSQL, and React, and deployed on Render and Vercel.',
+      description: 'A Facebook-inspired full-stack social media application with authentication, real-time messaging, notifications, posts, comments, likes, file uploads, and friend management. Built using React, Node.js, Express, and PostgreSQL, replicating core social networking features in a modern web application.',
       techStack: ['React', 'node js', 'express js', 'PostgreSQL', 'socket.io'],
       image: FacebookImage,
       github: 'https://github.com/hassan-abubakar-dev/facebook-clone-api',

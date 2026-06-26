@@ -1,6 +1,6 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from './ui/button';
-import profilePhoto from '../../src/assets/profile (2).jpg';
+import profilePhoto from '../../src/assets/admin-profile.png';
 
 const HeroSection = () => {
   return (
@@ -41,15 +41,24 @@ const HeroSection = () => {
             <span className="gradient-text">Hassan Abubakar Maiwada</span>
           </h1>
 
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-4 animate-fade-up animation-delay-600">
-            Fullstack developer
-          </p>
+          {/* Professional Title */}
+<p className="text-xl md:text-2xl text-muted-foreground mb-4 animate-fade-up animation-delay-600">
+  Fullstack Developer & Founder
+</p>
 
-          {/* Tagline */}
-          <p className="text-lg text-muted-foreground/80 max-w-2xl mx-auto mb-10 animate-fade-up animation-delay-600">
-            2+ years of experience, solutions at the intersection of software engineering, Building the future, one line of code at a time.
-          </p>
+{/* Tagline */}
+<p className="text-lg text-muted-foreground/80 max-w-2xl mx-auto mb-10 animate-fade-up animation-delay-600">
+  Building impactful digital solutions with 2+ years of experience. Founder of 
+  <a 
+    href="https://masjiba.com" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="text-emerald-600 font-semibold hover:underline mx-1"
+  >
+    Masjiba
+  </a>, 
+  where I bridge software engineering with community service, building technology that serves the Ummah.
+</p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-up animation-delay-600">

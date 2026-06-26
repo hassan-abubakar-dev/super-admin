@@ -1,5 +1,5 @@
 import { Code2, Brain, GraduationCap, MessageSquare, Webcam } from 'lucide-react';
-import workingPhoto from '@/assets/IMG-20251223-WA0014.jpg';
+import workingPhoto from '@/assets/admin-image.png';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const AboutSection = () => {
@@ -58,12 +58,17 @@ const AboutSection = () => {
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
               </div>
               
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a Software and Fullstack developer with over 2 years of experience building robust applications and deployment of systems. My journey in tech started with a fascination for how software can transform ideas into reality.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Currently pursuing my BSc at Federal University Dutse, I combine academic knowledge with hands-on industry experience. I specialize in full-stack development and applications.
-              </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+  I'm a Fullstack Developer with over 2 years of experience building and deploying robust, user-centric applications. My journey in tech is driven by a passion for transforming complex ideas into seamless digital realities.
+</p>
+
+<p className="text-lg text-muted-foreground leading-relaxed mt-4">
+  Currently, I am the Founder of <strong>Masjiba</strong>, a platform dedicated to serving the Ummah with essential Islamic resources. Building Masjiba from the ground up has been my most rewarding challenge—it has allowed me to master the entire software lifecycle, from architecting scalable databases and integrating secure payment systems to deploying complex PWA (Progressive Web App) architectures.
+</p>
+
+<p className="text-lg text-muted-foreground leading-relaxed mt-4">
+  As a student at the Federal University Dutse, I bridge the gap between academic theory and real-world impact. I am deeply committed to crafting software that is not only functional but also meaningful, serving both technology and community.
+</p>
             </div>
 
             {/* Highlights Grid */}
